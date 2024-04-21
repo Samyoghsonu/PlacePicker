@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "builds": [{ "src": "app.js", "use": "@vercel/node" }],
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
   "routes": [
-    { "src": "/places", "dest": "/app.js" },
-    { "src": "/user-places", "dest": "/app.js" },
-    { "src": "/user-places", "methods": ["PUT"], "dest": "/app.js" },
-    { "src": "/(.*)", "dest": "/app.js" }
+    { "src": "/places", "dest": "/index.js" },
+    { "src": "/user-places", "dest": "/index.js" },
+    { "src": "/user-places", "methods": ["PUT"], "dest": "/index.js" },
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
