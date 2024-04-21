@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [{ "src": "./app.js", "use": "@vercel/node" }],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/places"
-    }
+    { "src": "/places", "dest": "/app.js" },
+    { "src": "/user-places", "dest": "/app.js" },
+    { "src": "/user-places", "methods": ["PUT"], "dest": "/app.js" },
+    { "src": "/(.*)", "dest": "/app.js" }
   ]
 }
